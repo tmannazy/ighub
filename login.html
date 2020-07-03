@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | Design</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-image: url("/images/love.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .log {
+            border-radius: 5px;
+            border-bottom: rgba(232, 241, 208, 0.61) ridge 4px;
+            box-shadow: 15px 15px 13px 1px rgb(114, 96, 84);
+            background: rgba(112, 80, 92, 0.959);
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            color: rgb(217, 229, 245);
+            font-size: larger;
+            font-style: italic;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+        }
+        
+        li {
+            float: left;
+            border: 1px solid thistle;
+            /* display: inline; */
+        }
+        
+        li a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            color: greenyellow;
+            background: indigo;
+            padding-right: 40px;
+            font-size: x-large;
+            text-align: center;
+        }
+        
+        li a:hover {
+            background: yellow;
+            color: slateblue;
+        }
+        
+        input[type=text] {
+            width: 100%;
+            padding: 12px 25px;
+            margin: 8px 0;
+            display: inline-block;
+            font-size: larger;
+            font-weight: 900;
+        }
+        
+        input[type=password] {
+            width: 100%;
+            padding: 12px 25px;
+            margin: 8px 0;
+            display: inline-block;
+            font-size: larger;
+            font-weight: 900;
+        }
+        
+        input[type=text]:active {
+            border: none;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background: rgb(188, 238, 130);
+            color: rgb(8, 15, 1);
+            margin-top: 8px;
+            border: none;
+            padding: 14px 23px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: x-large;
+            font-style: normal;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 900;
+            text-align: center;
+        }
+        
+        input[type=submit]:hover {
+            color: indianred;
+            background: rgb(8, 15, 1);
+            border: solid 2px darkkhaki;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="/navbar.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="/login.html">Login</a></li>
+        <li><a href="/signup.html">Sign Up</a></li>
+    </ul>
+
+    <div class="log">
+        <form action="">
+            <label for="email">Email</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="pwd">Password</label><br>
+            <input type="password" name="pwd" id="pwd"><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+
+
+</body>
