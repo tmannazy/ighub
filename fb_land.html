@@ -17,7 +17,7 @@
         
         header {
             background: rgba(29, 44, 121, 0.767);
-            height: 100px;
+            height: 90px;
         }
         
         h1 {
@@ -27,8 +27,8 @@
             width: 300px;
             letter-spacing: 0;
             display: inline-block;
-            margin-top: .5em;
-            margin-left: 4em;
+            margin-top: .4em;
+            margin-left: 3em;
         }
         
         .f1 {
@@ -36,10 +36,21 @@
             height: 3em;
             float: right;
             width: 600px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+        }
+        /* .f1 label {
+            width: 100%;
+        } */
+        
+        .f1 input[type=email] {
+            width: 50%;
+            display: inline-block;
+            box-sizing: border-box;
         }
         
-        input[type=email] {
-            width: 150px;
+        .f1 input[type=password] {
+            width: 50%;
         }
         
         .f1 a {
@@ -83,7 +94,6 @@
             float: right;
             margin-right: 3em;
             margin-bottom: 2em;
-            /* margin-top: 0; */
             width: 500px;
         }
         
@@ -108,6 +118,9 @@
             border-color: none;
             border: solid 1px rgb(168, 166, 166);
         }
+        /* input[type=text]:focus {
+            border: solid 1px transparent;
+        } */
         
         input[type=tel] {
             width: 410px;
@@ -168,9 +181,9 @@
         <h1>facebook</h1>
         <div class="f1">
             <form action="">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <label for="email">Email or phone</label><br>
                 <label for="pwd">Password</label>
+                <input type="email" name="email" id="email">
                 <input type="password" name="pwd" id="pwd">
                 <input type="submit" value="Login">
             </form>
