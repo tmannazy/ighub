@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FB Portal</title>
+    <link rel="stylesheet" href="/styles/fbportal2.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li class="first">BYB</li>
+            <li>with Facebook</li>
+        </ul>
+        <div class="user-info">
+            <div class="login">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <i class="fa fa-1x fa-sort-desc" aria-hidden="true"></i>
+            </div>
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="page">
+        <div class="menu">
+            <ul>
+                <li class="active-menu"><a id="active-color" href="#">Trainers dashboard</a></li>
+                <li><a href="#">Book Session</a></li>
+                <li><a href="#">All Session</a></li>
+                <li><a href="#">Check session status</a></li>
+                <li><a href="#">Send report</a></li>
+                <li><a href="#">All reports</a></li>
+                <li><a href="#">Download resources</a></li>
+                <li><a href="#">My Payments</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Join our community</a></li>
+            </ul>
+        </div>
+        <h1>Schedule a training session</h1>
+        <div class="form-data">
+            <p>Please note that you are to fill the form, a minimum of 7 days before your proposed date.</p>
+            <div class="fm-info">
+                <form action="" method="POST">
+                    <input type="text" name="fname" id="fname" placeholder="Josh">
+                    <input type="text" name="lname" id="lname" placeholder="Onwughalu">
+                    <input type="email" name="email" id="email" placeholder="kreativejosh@gmail.com">
+                    <input type="text" name="org" id="org" placeholder="Name of organisation">
+                    <input type="text" name="student" id="student" placeholder="Expected Nos of participants">
+                    <input type="text" name="venue" id="venue" placeholder="Training venue">
+                    <input list="lgas" name="lga" placeholder="Proposed LGA">
+                    <datalist id="lgas">                    
+                        <option value="Ede South">
+                        <option value="Ede North">
+                        <option value="Ekwusigo">
+                        <option value="Oke-Baale">
+                        <option value="Olurunda">
+                        <option value="Aba North">
+                    </datalist>
+                    <input type="text" name="date" id="date" placeholder="Proposed training date">
+                    <input type="text" name="time" id="time" placeholder="Proposed time">
+                    <button>Save and Continue</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2018 fbportal. All rights reserved.</p>
+        <p class="foot1">made with at Innovation growth hub Aba</p>
+    </footer>
+</body>
+
+</html>

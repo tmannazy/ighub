@@ -1,0 +1,181 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: rgb(233, 229, 229);
+    }
+    
+    .page {
+        margin: auto;
+        max-width: 30%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .navbar {
+        background-color: black;
+        color: seashell;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        padding: 5px 10px;
+    }
+    
+    .notifications {
+        color: seashell;
+        font-size: smaller;
+    }
+    
+    .notifications i,
+    .network i {
+        padding-top: 9px;
+        padding-bottom: 0;
+        font-size: 12px;
+    }
+    
+    .notifications p,
+    .network p {
+        font-size: 15px;
+        padding: 1px;
+        display: inline;
+    }
+    
+    .time {
+        padding-top: 5px;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px 0;
+    }
+    
+    header div h2 {
+        text-transform: uppercase;
+        padding-top: 0;
+        margin-top: 2px;
+        width: 30px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    
+    header div:nth-child(2) {
+        text-transform: capitalize;
+        color: red;
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    
+    .hamburger i {
+        font-size: 23px;
+    }
+    
+    nav {
+        border: 1px solid rgb(238, 227, 227);
+        padding-bottom: 3px;
+        height: 300px;
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.26), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 0 10px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    nav img {
+        display: block;
+        height: 300px;
+        max-width: 100%;
+        margin: auto;
+    }
+    
+    .carousel {
+        margin: auto;
+        max-width: 10%;
+        padding-top: 10px;
+    }
+    
+    .carousel i {
+        font-size: 9px;
+        padding-top: 0;
+        background-color: rgb(231, 229, 229);
+        border-width: 0;
+    }
+    
+    nav+div i:nth-child(2) {
+        color: red;
+    }
+    
+    .watch-info {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .watch-origin {
+        font-size: 10px;
+        padding: 0 15px;
+        line-height: 20px;
+    }
+    
+    h1 {
+        padding: 0 10px;
+        margin-bottom: 0;
+    }
+    
+    .watch-origin p {
+        width: 90%;
+        overflow: hidden;
+        float: left;
+    }
+    
+    .watch-origin+i {
+        clear: both;
+        padding-right: 2px;
+        padding-top: 110px;
+        color: rgb(189, 185, 185);
+    }
+    
+    .amt p {
+        float: left;
+        clear: both;
+    }
+    
+    .up {
+        margin-bottom: 0;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    
+    .down {
+        color: rgb(189, 185, 185);
+        margin-top: 0;
+        padding-left: 10px
+    }
+    
+    .flt {
+        float: right;
+        padding-right: 40px;
+        font-size: 20px;
+        color: rgb(189, 185, 185);
+    }
+    
+    fa-minus-square-o {
+        padding-top: 0;
+        padding-right: 20px;
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+    
+    .flt i>p {
+        display: inline-block;
+    }
+    
+    button {
+        padding: 20px 90px;
+        margin: 10px 70px 20px;
+        width: 70%;
+        background-color: rgb(233, 47, 47);
+        border-width: 0;
+        color: rgb(233, 229, 229);
+        cursor: pointer;
+        font-weight: 600;
+    }
