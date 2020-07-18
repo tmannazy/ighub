@@ -1,0 +1,125 @@
+                    * {
+                        box-sizing: border-box;
+                        margin: 0;
+                    }
+                    /* 
+body,
+html {
+    height: 100%;
+} */
+                    
+                    body {
+                        /* background-image: url("../images/f_pics_two.jpg"); */
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/f_pics_two.jpg");
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-attachment: fixed;
+                        background-size: cover;
+                    }
+                    
+                    header {
+                        background-color: rgb(72, 25, 240);
+                        height: 90px;
+                        /* overflow: visible; */
+                        /* position: fixed; */
+                    }
+                    
+                    nav div {
+                        width: 50%;
+                        margin: 0;
+                    }
+                    
+                    h1 {
+                        font-size: xx-large;
+                        text-align: left;
+                        text-transform: uppercase;
+                        padding-left: 30px;
+                        display: inline-block;
+                        color: white;
+                    }
+                    
+                    h1+p {
+                        padding-left: 0;
+                        text-align: left;
+                        font-style: italic;
+                        /* display: inline-block; */
+                        /* height: 4px; */
+                        position: relative;
+                        left: 30px;
+                    }
+                    
+                    ul {
+                        list-style-type: none;
+                        text-align: right;
+                        /* margin-bottom: 40px; */
+                    }
+                    
+                    ul li {
+                        display: inline;
+                        background-color: seashell;
+                        padding: 40px;
+                    }
+                    
+                    nav a {
+                        text-decoration: none;
+                    }
+                    
+                    section.hero-image {
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/f_pics_four.jpg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-attachment: fixed;
+                        position: relative;
+                        height: 500px;
+                    }
+                    
+                    .hero-image div {
+                        text-align: center;
+                        position: relative;
+                        top: 200px;
+                    }
+                    /* .hero-image button {
+                            border: none;
+                            padding: 20px;
+                            margin: 0 auto;
+                    } */
+                    
+                    .button {
+                        border-radius: 4px;
+                        background-color: #f4511e;
+                        border: none;
+                        color: #FFFFFF;
+                        text-align: center;
+                        font-size: 28px;
+                        padding: 20px;
+                        width: 300px;
+                        transition: all 0.5s;
+                        cursor: pointer;
+                        margin: 5px;
+                    }
+                    
+                    .button span {
+                        cursor: pointer;
+                        display: inline-block;
+                        position: relative;
+                        transition: 0.5s;
+                    }
+                    
+                    .button span:after {
+                        content: '\00bb';
+                        position: absolute;
+                        opacity: 0;
+                        top: 0;
+                        right: 20px;
+                        transition: 0.7s;
+                    }
+                    
+                    .button:hover span {
+                        padding-right: 30px;
+                    }
+                    
+                    .button:hover span:after {
+                        opacity: 1;
+                        right: 0;
+                    }
