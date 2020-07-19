@@ -18,24 +18,38 @@ html {
                     }
                     
                     header {
-                        background-color: rgb(72, 25, 240);
+                        background-color: #092834;
                         height: 90px;
                         /* overflow: visible; */
                         /* position: fixed; */
                     }
                     
-                    nav div {
-                        width: 50%;
-                        margin: 0;
+                    nav {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                    }
+                    
+                    div.logo {
+                        margin-top: 15px;
+                    }
+                    
+                    div.nav-items {
+                        margin-top: 30px;
                     }
                     
                     h1 {
-                        font-size: xx-large;
+                        font-size: 40px;
                         text-align: left;
                         text-transform: uppercase;
                         padding-left: 30px;
+                        margin: 0;
                         display: inline-block;
-                        color: white;
+                    }
+                    
+                    h1 a {
+                        text-decoration: none;
+                        color: #B2D732;
                     }
                     
                     h1+p {
@@ -46,22 +60,30 @@ html {
                         /* height: 4px; */
                         position: relative;
                         left: 30px;
+                        margin: 0;
+                        color: #5FC8F1;
                     }
                     
                     ul {
                         list-style-type: none;
                         text-align: right;
-                        /* margin-bottom: 40px; */
                     }
                     
                     ul li {
                         display: inline;
-                        background-color: seashell;
-                        padding: 40px;
+                        padding: 10px;
+                        margin: 0;
                     }
                     
-                    nav a {
+                    ul a {
+                        color: #FE2712;
                         text-decoration: none;
+                        font-size: larger;
+                        font-weight: 600;
+                    }
+                    
+                    ul a:hover {
+                        color: #5FC8F1;
                     }
                     
                     section.hero-image {
@@ -87,9 +109,9 @@ html {
                     
                     .button {
                         border-radius: 4px;
-                        background-color: #f4511e;
+                        background-color: #FE2712;
                         border: none;
-                        color: #FFFFFF;
+                        color: #F0F7D4;
                         text-align: center;
                         font-size: 28px;
                         padding: 20px;
