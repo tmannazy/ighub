@@ -101,11 +101,6 @@ html {
                         position: relative;
                         top: 200px;
                     }
-                    /* .hero-image button {
-                            border: none;
-                            padding: 20px;
-                            margin: 0 auto;
-                    } */
                     
                     .button {
                         border-radius: 4px;
@@ -144,4 +139,18 @@ html {
                     .button:hover span:after {
                         opacity: 1;
                         right: 0;
+                    }
+                    
+                    section.note {
+                        height: 300px;
+                        background-color: #092834;
+                    }
+                    
+                    .note p {
+                        color: #F0F7D4;
+                        max-width: 50%;
+                        margin: auto;
+                        font-size: larger;
+                        padding: 50px;
+                        text-align: center;
                     }
