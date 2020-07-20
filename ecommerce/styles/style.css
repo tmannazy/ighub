@@ -44,7 +44,9 @@
                 font-size: 40px;
                 text-align: left;
                 text-transform: uppercase;
-                padding-left: 30px;
+                padding: 0 10px;
+                border: 1px solid #F0F7D4;
+                border-radius: 5px;
                 margin: 0;
                 display: inline-block;
             }
@@ -56,12 +58,11 @@
             
             h1+p {
                 padding-left: 0;
-                text-align: left;
+                text-align: center;
                 font-style: italic;
                 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 font-size: small;
                 position: relative;
-                left: 35px;
                 margin: 0;
                 color: #5FC8F1;
             }
@@ -214,7 +215,6 @@
                 background-color: #092834;
                 color: #5FC8F1;
                 position: relative;
-                height: 10px;
                 margin-top: -10px;
                 bottom: 0;
             }
