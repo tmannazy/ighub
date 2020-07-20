@@ -2,26 +2,20 @@
                         box-sizing: border-box;
                         margin: 0;
                     }
-                    /* 
-body,
-html {
-    height: 100%;
-} */
                     
                     body {
-                        /* background-image: url("../images/f_pics_two.jpg"); */
                         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/f_pics_two.jpg");
                         background-repeat: no-repeat;
                         background-position: center;
                         background-attachment: fixed;
                         background-size: cover;
+                        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
                     }
                     
                     header {
                         background-color: #092834;
                         height: 90px;
-                        /* overflow: visible; */
-                        /* position: fixed; */
+                        border-bottom: 0 solid rgba(70, 64, 64, 0.555);
                     }
                     
                     nav {
@@ -56,10 +50,10 @@ html {
                         padding-left: 0;
                         text-align: left;
                         font-style: italic;
-                        /* display: inline-block; */
-                        /* height: 4px; */
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        font-size: small;
                         position: relative;
-                        left: 30px;
+                        left: 35px;
                         margin: 0;
                         color: #5FC8F1;
                     }
@@ -80,10 +74,15 @@ html {
                         text-decoration: none;
                         font-size: larger;
                         font-weight: 600;
+                        padding: 30px;
+                        margin: 0;
                     }
                     
                     ul a:hover {
-                        color: #5FC8F1;
+                        background-color: #B2D732;
+                        color: #FE2712;
+                        font-size: 20px;
+                        margin: 0;
                     }
                     
                     section.hero-image {
@@ -142,8 +141,9 @@ html {
                     }
                     
                     section.note {
-                        height: 300px;
+                        height: 350px;
                         background-color: #092834;
+                        margin-bottom: 30px;
                     }
                     
                     .note p {
@@ -153,4 +153,65 @@ html {
                         font-size: larger;
                         padding: 50px;
                         text-align: center;
+                    }
+                    
+                    section.meals {
+                        background-color: #F0F7D4;
+                        margin-bottom: 50px;
+                    }
+                    
+                    .meals h2 {
+                        color: #FE2712;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-size: xx-large;
+                        display: block;
+                        padding: 35px;
+                        margin-bottom: 0;
+                    }
+                    
+                    .meals figure {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        max-width: 100%;
+                        margin: 0 30px 30px;
+                    }
+                    
+                    figure div {
+                        margin-right: 4px;
+                        margin-bottom: 25px;
+                        max-width: 50%;
+                    }
+                    
+                    figure div>figcaption {
+                        font-size: x-large;
+                        text-align: center;
+                        color: #B2D732;
+                        background-color: #092834;
+                        padding: 10px;
+                        margin-top: 9px;
+                    }
+                    
+                    footer {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        width: 100%;
+                        background-color: #092834;
+                        color: #5FC8F1;
+                    }
+                    
+                    footer p {
+                        padding: 20px;
+                        font-size: large;
+                    }
+                    
+                    footer div {
+                        margin: 0;
+                    }
+                    
+                    footer div>i {
+                        padding: 20px;
+                        font-size: large;
                     }
