@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.877)), url("../images/f_pics_two.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: #092834;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 0 solid rgba(70, 64, 64, 0.555);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.logo {
+    margin-top: 15px;
+}
+
+div.nav-items {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-left: 30px;
+    margin: 0;
+    display: inline-block;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #B2D732;
+}
+
+h1+p {
+    padding-left: 0;
+    text-align: left;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: relative;
+    left: 35px;
+    margin: 0;
+    color: #5FC8F1;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+    margin: 0;
+}
+
+ul a {
+    color: #FE2712;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    padding: 30px;
+    margin: 0;
+}
+
+ul a:hover {
+    background-color: #B2D732;
+    color: #FE2712;
+    font-size: 20px;
+    margin: 0;
+}
+
+section.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/f_pics_four.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: static;
+    height: 500px;
+}
+
+.hero-image div {
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #FE2712;
+    border: none;
+    color: #F0F7D4;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.7s;
+}
+
+.button:hover span {
+    padding-right: 30px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+section.note {
+    height: 350px;
+    background-color: #092834;
+    margin-bottom: 30px;
+}
+
+.note p {
+    color: #F0F7D4;
+    max-width: 50%;
+    margin: auto;
+    font-size: larger;
+    padding: 50px;
+    text-align: center;
+}
+
+section.meals {
+    background-color: #F0F7D4;
+    margin-bottom: 50px;
+}
+
+.meals h2 {
+    color: #FE2712;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    display: block;
+    padding: 35px;
+    margin-bottom: 0;
+}
+
+.meals figure {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 30px 30px;
+}
+
+figure div {
+    margin-right: 4px;
+    margin-bottom: 25px;
+    max-width: 50%;
+}
+
+figure div>figcaption {
+    font-size: x-large;
+    text-align: center;
+    color: #B2D732;
+    background-color: #092834;
+    padding: 10px;
+    margin-top: 9px;
+}
+
+
+/* styling for product section */
+
+section.products {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+}
+
+section div.column {
+    flex: 33%;
+    margin: 10px;
+}
+
+section.products>img {
+    display: block;
+    max-width: 100%;
+    /* height: 600px; */
+}
+
+section div.column>img {
+    width: 95%;
+    height: 90%;
+}
+
+section div.last>img {
+    width: 95%;
+    height: 65%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #092834;
+    color: #5FC8F1;
+}
+
+footer p {
+    padding: 20px;
+    font-size: large;
+}
+
+footer div {
+    margin: 0;
+}
+
+footer div>i {
+    padding: 20px;
+    font-size: large;
+}
+
+footer.prod {
+    /* position: absolute; */
+    bottom: 0;
+}
