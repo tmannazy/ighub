@@ -148,6 +148,11 @@
                 right: 0;
             }
             
+            .button a {
+                text-decoration: none;
+                color: #F0F7D4;
+            }
+            
             section.note {
                 height: 350px;
                 background-color: #092834;
