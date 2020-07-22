@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.877)), url("../images/f_pics_two.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: relative;
+        min-height: 100vh; */
+    height: 100%;
+}
+
+header {
+    background-color: #092834;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    border-bottom: 0 solid rgba(70, 64, 64, 0.555);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div.logo {
+    margin-top: 15px;
+}
+
+div.nav-items {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    border: 1px solid #F0F7D4;
+    border-radius: 5px;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #B2D732;
+}
+
+h1+p {
+    padding-left: 0;
+    text-align: center;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+    position: relative;
+    margin: 0;
+    color: #5FC8F1;
+}
+
+ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+    margin: 0;
+}
+
+ul a {
+    color: #FE2712;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 600;
+    padding: 30px;
+    margin: 0;
+}
+
+ul a:hover {
+    background-color: #B2D732;
+    color: #FE2712;
+    font-size: 20px;
+    margin: 0;
+}
+
+
+/* styling for product section */
+
+section.products {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.959), rgba(0, 0, 0, 0.973)), url("../images/f_pic_one.jpg"); */
+    background-image: url("../images/f_pic_one.jpg");
+    margin-top: 90px;
+    padding: 300px;
+    height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+div.info-products {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+    margin-top: 5px;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(9, 40, 52, 0.651);
+    color: #B2D732;
+}
+
+div.info-products h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 0 40px 20px;
+    color: #5FC8F1;
+}
+
+div.info-products p {
+    text-align: center;
+    font-size: larger;
+}
+
+section.img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+div.column {
+    flex: 33%;
+    margin: 10px;
+}
+
+div.column>img {
+    width: 95%;
+    height: 90%;
+}
+
+div.last>img {
+    width: 95%;
+    height: 65%;
+}
+
+div.column>div {
+    display: inline-block;
+    color: #5FC8F1;
+    background-color: #092834;
+    padding: 7px;
+    margin: auto 150px;
+    max-width: 100%;
+    font-weight: 600;
+    font-size: larger;
+}
+
+
+/* Footer styling */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: #092834;
+    color: #5FC8F1;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    padding: 20px;
+    font-size: large;
+}
+
+footer div {
+    margin: 0;
+}
+
+footer div>i {
+    padding: 20px;
+    font-size: large;
+}

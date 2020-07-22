@@ -3,11 +3,6 @@
                 margin: 0;
             }
             
-            article {
-                position: relative;
-                min-height: 100vh;
-            }
-            
             body {
                 background-image: linear-gradient(rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.925)), url("../images/f_pics_two.jpg");
                 background-repeat: no-repeat;
