@@ -1,0 +1,121 @@
+/* main {
+    background-image: url("../images/hans-jurgen-mager-Ec_ygZTIv_0-unsplash.jpg");
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    color: #3a173c;
+}
+
+::selection {
+    color: #3a173c;
+    background-color: #b9e2bf;
+}
+
+.nav-hero {
+    background-image: url("../images/homepage-desktop-4000x2588-2000x1294.webp");
+    background-position: center;
+    /* background-position-x: contain; */
+    /* background-position-y: top; */
+    background-size: cover;
+}
+
+*/ li #logo {
+    width: 3px;
+    padding: 0;
+}
+
+svg {
+    width: 150px;
+    height: 50px;
+    padding: 0;
+}
+
+svg#icon-logo {
+    color: #3a173c;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a#logo {
+    fill: #3a173c;
+    -webkit-transition: fill .125s linear;
+    -o-transition: fill .125s linear;
+    transition: fill .125s linear;
+}
+
+.nav-item a {
+    color: #3a173c;
+}
+
+.nav-item a.active {
+    border-radius: 30px;
+    background-color: #3a173c;
+    color: #b9e2bf;
+}
+
+.nav-item a:hover {
+    color: #b9e2bf;
+}
+
+header.scrolled {
+    background-color: #3a173c;
+    transition: background 1000ms;
+    padding-top: 300px;
+}
+
+header.scrolled a,
+header.scrolled a#logo {
+    color: #BFBAb6;
+}
+
+header.scrolled a.active {
+    background-color: #b9e2bf;
+    color: #3a173c;
+}
+
+.hero h1 {
+    width: 70%;
+    text-align: left;
+}
+
+.hero p {
+    max-width: 50%;
+    margin: 0;
+}
+
+.get-plato button {
+    background-color: #3a173c;
+    color: #b9e2bf;
+    border-radius: 30px;
+    font-size: 17px;
+    border: none;
+}
+
+.custom-shape-divider-bottom-1597229042 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1597229042 svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 1.3px);
+    height: 147px;
+}
+
+.custom-shape-divider-bottom-1597229042 .shape-fill {
+    fill: #BFBAb6;
+}
+
+.info {
+    z-index: -2;
+    background-color: #BFBAb6;
+}
