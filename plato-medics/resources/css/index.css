@@ -17,7 +17,7 @@ main {
 
 .nav-hero {
     background-image: url("../images/homepage-desktop-4000x2588-2000x1294.webp");
-    background-position: center;
+    background-position: right;
     /* background-position-x: contain; */
     /* background-position-y: top; */
     background-size: cover;
@@ -116,6 +116,11 @@ header.scrolled a.active {
 }
 
 .info {
-    z-index: -2;
+    /* z-index: -2; */
     background-color: #BFBAb6;
+}
+
+.info .promise {
+    width: 50%;
+    font-size: xx-large;
 }
