@@ -63,12 +63,15 @@ a#logo {
 
 header.scrolled {
     background-color: #3a173c;
-    transition: background 1000ms;
-    padding-top: 300px;
+    transition: background 1s;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 header.scrolled a,
-header.scrolled a#logo {
+header.scrolled svg {
+    transition: background 1s;
     color: #BFBAb6;
 }
 
@@ -116,11 +119,109 @@ header.scrolled a.active {
 }
 
 .info {
-    /* z-index: -2; */
     background-color: #BFBAb6;
 }
 
 .info .promise {
     width: 50%;
     font-size: xx-large;
+}
+
+.ingredients-item-one,
+.ingredients-item-two,
+.ingredients-item-three,
+.ingredients-item-four {
+    position: relative;
+}
+
+.ingredients div>img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: grayscale(100%);
+}
+
+.ingredients-item-one {
+    padding-top: 250px;
+}
+
+.ingredients-item-two {
+    padding-top: 500px;
+}
+
+.ingredients-item-three {
+    padding-top: 150px;
+}
+
+.ingredients-item-four {
+    padding-top: 600px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text {
+    /* background-color: #4CAF50; */
+    color: #3a173c;
+    font-size: 16px;
+    padding: 1px 2px;
+    width: 100%;
+    /* position: absolute; */
+}
+
+.ingredients-.ingredients-item-four img {
+    opacity: 0.3;
+}
+
+.ingredients-.ingredients-item-four .middle {
+    opacity: 1;
+}
+
+.detail-info a {
+    color: #3a173c;
+}
+
+.detail-info a:hover {
+    text-decoration: none;
+    color: #3a173c;
+}
+
+.detail-info span:hover {
+    color: #b9e2bf;
+}
+
+a.link-ingredients:hover {
+    color: #b9e2bf;
+}
+
+.link-ingredients::after {
+    background-color: #3a173c;
+    content: "";
+    display: inline-block;
+    height: .125rem;
+    position: relative;
+    vertical-align: middle;
+    width: 15%;
+    margin-left: 10px;
+    /* align-self: flex-end; */
+}
+
+.link-ingredients::after:hover {
+    color: #b9e2bf;
+}
+
+.detail-info span {
+    text-decoration-line: underline;
+    text-underline-position: below;
+    /* background-color: #3a173c; */
 }
