@@ -10,4 +10,6 @@ let value = prompt('Input the Celsius Value');
 let fahrenheit = ((9 / 5) * value) + 32;
 
 // Output the Fahrenheit Calculation
-console.log(` The value of the Celsius in Fahrenheit is ${fahrenheit}F.`);
+console.log(`The value of the Celsius in Fahrenheit is ${fahrenheit}F.`);
+let data = document.querySelector('.info')
+data.textContent = (`The value of the Celsius in Fahrenheit is ${fahrenheit}F.`);
