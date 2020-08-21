@@ -4,63 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | IGHUB Fellowship 4</title>
+    <title>Plato | Medics</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./plato-medics/resources/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>The Developer and Netpreneur Fellowship</h1>
-    <!-- <p>A home for grooming aspiring techies to become better by <abbr title="Innovation Growth Hub">IGHUB</abbr></p>
-    <p>My name is Emmanuel ANENE</p> -->
-    <h2>My track is the Frontend track</h2>
-    <!-- <p>So far we've been inducted and prepared for the journey ahead</p>
-    <p>There are about many technologies used in Frontend Development</p> -->
-    <h3>Frontend technologies are mainly 3</h3>
-    <!-- <p>HTML</p>
-    <p>HTML 5</p>
-    <p>CSS</p>
-    <p>JS</p> -->
-    <h4>Networking of different individuals is making sense as we continue to bond</h4>
-    <h5>This Week is slated for HTML classes</h5>
-    <h6>It's gonna be intensive as we have been told overtime. Getting prepared for whatever lies ahead</h6>
-    <a href="http://www.google.com">Visit here!</a>
-    <img src="./images/love.jpg" alt="A heart of Love">
-    <table>
-        <tr>
-            <th>Continent</th>
-            <th>Country</th>
-            <th>Capital</th>
-        </tr>
-        <tr>
-            <td>Africa</td>
-            <td>Nigeria</td>
-            <td>Abuja</td>
-        </tr>
-        <tr>
-            <td>North America</td>
-            <td>United States of America</td>
-            <td>Washington DC</td>
-        </tr>
-        <tr>
-            <td>Asia</td>
-            <td>South Korea</td>
-            <td>Seoul</td>
-        </tr>
-        <tr>
-            <td>Europe</td>
-            <td>Germany</td>
-            <td>Berlin</td>
-        </tr>
-        <tr>
-            <td>South America</td>
-            <td>Brazil</td>
-            <td>Brasilia</td>
-        </tr>
-        <tr>
-            <td>Oceania</td>
-            <td>Australia</td>
-            <td>Canberra</td>
-        </tr>
-    </table>
+    <main>
+        <section class="nav-hero">
+            <header class="pt-3 px-5 mb-3" id="mainNavbar">
+                <ul class="nav justify-content-around fixe-top">
+                    <li class="nav-item mr-auto">
+                        <a href="" id="logo">
+                            <svg id="icon-logo" viewBox="0 0 96 33">
+                <path d="M95.9,8.8c0,1.3-1,2.2-2.3,2.2c-1.3,0-2.3-1-2.3-2.2c0-1.2,1-2.2,2.3-2.2C94.9,6.6,95.9,7.5,95.9,8.8z M91.9,8.8c0,1,0.7,1.8,1.7,1.8c1,0,1.7-0.8,1.7-1.8c0-1-0.7-1.8-1.7-1.8S91.9,7.8,91.9,8.8z M93.3,9.9h-0.5V7.7 c0.2,0,0.5-0.1,0.8-0.1c0.4,0,0.6,0.1,0.8,0.2c0.1,0.1,0.2,0.3,0.2,0.5c0,0.2-0.2,0.4-0.5,0.5v0c0.2,0.1,0.3,0.2,0.4,0.5 c0.1,0.3,0.1,0.5,0.2,0.6h-0.6c-0.1-0.1-0.1-0.3-0.2-0.5C94,9.1,93.8,9,93.6,9h-0.2V9.9z M93.3,8.7h0.2c0.3,0,0.5-0.1,0.5-0.3 c0-0.2-0.1-0.3-0.5-0.3c-0.1,0-0.2,0-0.3,0V8.7z"></path>
+                <path d="M10.2,6.3c-2.4,0-4.6,0.9-6.3,2.4V7H0.1V33h3.8V23c1.7,1.5,3.9,2.4,6.3,2.4c5.3,0,9.6-4.3,9.6-9.6 S15.4,6.3,10.2,6.3z M10.2,21.7c-3.2,0-5.8-2.6-5.8-5.8s2.6-5.8,5.8-5.8s5.8,2.6,5.8,5.8S13.4,21.7,10.2,21.7z"></path>
+                <path d="M79.2,6.3c-5.3,0-9.6,4.3-9.6,9.6s4.3,9.6,9.6,9.6c5.3,0,9.6-4.3,9.6-9.6S84.5,6.3,79.2,6.3z M79.2,21.7 c-3.2,0-5.8-2.6-5.8-5.8s2.6-5.8,5.8-5.8c3.2,0,5.8,2.6,5.8,5.8S82.4,21.7,79.2,21.7z"></path>
+                <path d="M22.9 0H26.7V25.4H22.9z"></path>
+                <path d="M45.5,8.7c-1.7-1.5-3.9-2.4-6.3-2.4c-5.3,0-9.6,4.3-9.6,9.6s4.3,9.6,9.6,9.6c2.4,0,4.6-0.9,6.3-2.4v2.4h3.8V7 h-3.8V8.7z M39.2,21.7c-3.2,0-5.8-2.6-5.8-5.8s2.6-5.8,5.8-5.8c3.2,0,5.8,2.6,5.8,5.8S42.4,21.7,39.2,21.7z"></path>
+                <path d="M52.3 10.5L58.3 10.5 58.3 25.5 62.1 25.5 62.1 10.5 68.2 10.5 68.2 6.8 52.3 6.8z"></path>
+                        </svg>
+                        </a>
+                    </li>
+                    <nav class="nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Learn&rarr;</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Shop</a>
+                        </li>
+                    </nav>
+                    <nav class="nav">
+                        <li class="nav-item ml-auto">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">My Cart</a>
+                        </li>
+                    </nav>
+                </ul>
+            </header>
+
+            <section class="hero d-flex pl-5 justify-content-evenly flex-column">
+                <h1>Less stress.<br/> More focus.<br/> A smoother you.<br/>
+                </h1>
+                <p>Plato is a daily herbal nootropic that can improve your memory,<br> help focus, and reduce symptoms of stress.</p>
+            </section>
+            <section class="get-plato mt-5 pl-5">
+                <button class="px-5 py-3">Get Plato</button>
+            </section>
+            <div class="custom-shape-divider-bottom-1597229042">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+            </div>
+        </section>
+        <section class="info">
+            <p class="promise text-center mx-auto">
+                Nootropics should be safe, simple, and effective. That’s why Plato has only four well-researched ingredients.
+            </p>
+            <section class="ingredients d-flex flex-row justify-content-around">
+                <div class="ingredients-item-one m-5">
+                    <img src="./resources/images/ingredients_800x466_ver01-200x281.webp" alt="">
+                    <div class="middle">
+                        <a href="#" class="text">Panax ginseng has been used since at least 1st century B.C for its benefits to stamina and cognition.</a>
+                    </div>
+                </div>
+                <div class="ingredients-item-two">
+                    <img src="./resources/images/ingredients_800x466_ver04-200x281.jpg" alt="">
+                    <div class="middle">
+                        <a href="#" class="text">Bacopa monnieri has been shown through numerous clinical studies to offer benefits to working memory, short-term memory, and recall.</a>
+                    </div>
+                </div>
+                <div class="ingredients-item-three">
+                    <img src="./resources/images/ingredients_800x466_ver03-200x281.jpg" alt="">
+                    <div class="middle">
+                        <a href="#" class="text">Rhodiola rosea is known as a powerful adaptogen with a long tradition of use in Chinese, Russian, and Tibetan folk medicine.</a>
+                    </div>
+                </div>
+                <div class="ingredients-item-four">
+                    <img src="./resources/images/ingredients_800x466_ver02-200x281.jpg" alt="">
+                    <div class="middle">
+                        <a href="#" class="text">L-Theanine is an amino acid found in green tea. It's been shown to improve relaxation, decrease temporary anxiety, and have synergistic effects with caffeine. </a>
+                    </div>
+                </div>
+            </section>
+            <section class="detail text-center mt-n5">
+                <div class="display-1 font-weight-lighter">4 ingredients. <br> 3 are plants.</div>
+                <section class="detail-info text-center d-flex flex-row justify-content-around ml-auto ">
+                    <div class="pl-5 mt-5 w-25"><a class="link-ingredients" href="#">VIEW OUR INGREDIENTS</a></div>
+                    <div class="text-left w-25"><a class="" href="#">Plato’s herbal ingredients come from standardized extracts of the best-understood nootropics available. <br><br>                        
+                        Here’s the <span>proof.</span></a>
+                    </div>
+                </section>
+
+            </section>
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(document).scroll(function() {
+                let $nav = $("#mainNavbar");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 
 </html>
