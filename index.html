@@ -4,63 +4,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | IGHUB Fellowship 4</title>
+    <title>JS Form | Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Raleway:wght@500&display=swap');
+        body {
+            background-color: #beef00;
+            color: #1400c6;
+            font-family: 'Dancing Script', cursive
+        }
+        
+        h1 {
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            color: #ff0028;
+            font-family: 'Raleway', sans-serif;
+            /* border: 1px solid #666666; */
+            width: 100%;
+        }
+        
+        .form-input {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: larger;
+            font-weight: 500;
+        }
+        
+        input {
+            width: 97%;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            color: #032b4a;
+            font-weight: 600;
+        }
+        
+        input:valid {
+            background-color: #b0dbfcd0;
+        }
+        
+        input:invalid {
+            box-shadow: 0 0 5px 1px #f10faf;
+            /* background-color: #f10faf; */
+        }
+        
+        input:focus {
+            color: #657a00;
+        }
+        
+        button {
+            display: block;
+            padding: 10px 50px;
+            max-width: 100vh;
+            cursor: pointer;
+            background-color: #beef00;
+            color: #000000;
+            font-size: larger;
+            font-weight: 600;
+            border-radius: 5px;
+            border-block-end-color: #1400c6;
+            border-right-color: #1400c6;
+            box-shadow: 2px 1px 6px 0 #657a00;
+            margin: 30px auto;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        span {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+            font-weight: 600;
+            background-color: #3b181e;
+            color: #b0dbfc;
+            font-size: xx-large;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>The Developer and Netpreneur Fellowship</h1>
-    <!-- <p>A home for grooming aspiring techies to become better by <abbr title="Innovation Growth Hub">IGHUB</abbr></p>
-    <p>My name is Emmanuel ANENE</p> -->
-    <h2>My track is the Frontend track</h2>
-    <!-- <p>So far we've been inducted and prepared for the journey ahead</p>
-    <p>There are about many technologies used in Frontend Development</p> -->
-    <h3>Frontend technologies are mainly 3</h3>
-    <!-- <p>HTML</p>
-    <p>HTML 5</p>
-    <p>CSS</p>
-    <p>JS</p> -->
-    <h4>Networking of different individuals is making sense as we continue to bond</h4>
-    <h5>This Week is slated for HTML classes</h5>
-    <h6>It's gonna be intensive as we have been told overtime. Getting prepared for whatever lies ahead</h6>
-    <a href="http://www.google.com">Visit here!</a>
-    <img src="./images/love.jpg" alt="A heart of Love">
-    <table>
-        <tr>
-            <th>Continent</th>
-            <th>Country</th>
-            <th>Capital</th>
-        </tr>
-        <tr>
-            <td>Africa</td>
-            <td>Nigeria</td>
-            <td>Abuja</td>
-        </tr>
-        <tr>
-            <td>North America</td>
-            <td>United States of America</td>
-            <td>Washington DC</td>
-        </tr>
-        <tr>
-            <td>Asia</td>
-            <td>South Korea</td>
-            <td>Seoul</td>
-        </tr>
-        <tr>
-            <td>Europe</td>
-            <td>Germany</td>
-            <td>Berlin</td>
-        </tr>
-        <tr>
-            <td>South America</td>
-            <td>Brazil</td>
-            <td>Brasilia</td>
-        </tr>
-        <tr>
-            <td>Oceania</td>
-            <td>Australia</td>
-            <td>Canberra</td>
-        </tr>
-    </table>
+    <h1>Express Entry Validation</h1>
+    <section class="form-input">
+        <form novalidae action="">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" minlength="2" maxlength="25" required>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" minlength="2" maxlength="30" required>
+            <label for="contact">Phone Number</label>
+            <input type="tel" name="contact" id="contact" pattern="[0-9 +-]{11,13}" title=" Enter 11 to 13 numbers" required>
+            <label for="state">State of Origin</label>
+            <input type="text" name="state" id="state" pattern=[a-z,A-Z]{4,9} required>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" required>
+            <label for="groupname">Country</label>
+            <input list="countrylistname" name="groupname" id="groupname" required>
+            <datalist id="countrylistname">
+                <option value="Australia"></option>
+                <option value="Armenia"></option>
+                <option value="Cameroon"></option>
+                <option value="Canada"></option>
+                <option value="England"></option>
+                <option value="Egypt"></option>
+                <option value="Ghana"></option>
+                <option value="Nigeria"></option>
+                <option value="United States of America"></option>
+                </datalist>
+            <label for="date">Date of Birth</label>
+            <input type="date" name="date" id="date" required>
+            <span class="error"></span>
+            <button> <i class="fas fa-paper-plane"></i> Submit</button>
+        </form>
+    </section>
+
+    <script src="./resources/scripts/index.js"></script>
 </body>
 
 </html>
