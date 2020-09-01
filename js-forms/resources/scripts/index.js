@@ -4,7 +4,7 @@ let errorInfo = document.querySelector("span");
 
 let currentDate = new Date();
 let fHour = 00;
-let sHour = 11;
+let sHour = 23;
 let fMinute = 00;
 let sMinute = 59;
 let cHour = currentDate.getHours();
@@ -12,7 +12,7 @@ let cMinute = currentDate.getMinutes();
 let cYear = currentDate.getFullYear();
 
 form.addEventListener('submit', function(event) {
-    if (!(cHour >= fHour || cHour <= sHour) && (cMinute >= fMinute || cMinute <= sMinute)) {
+    if ((cHour >= fHour || cHour <= sHour) && (cMinute >= fMinute || cMinute <= sMinute)) {
         errorInfo.textContent = `Registration Has Ended. Keep Tab with Next Opening.`;
         event.preventDefault();
     } else {
@@ -20,9 +20,3 @@ form.addEventListener('submit', function(event) {
         event.preventDefault();
     }
 });
-
-// function errorMsg() {
-
-// }
-
-// console.log(currentDate);
