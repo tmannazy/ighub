@@ -4,63 +4,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | IGHUB Fellowship 4</title>
+    <title>Start Page</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.13.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        ul {
+            background-color: rgb(238, 73, 62);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border-bottom: 0 solid rgba(70, 64, 64, 0.555);
+            box-shadow: 0 0 6px rgba(70, 62, 62, 0.651);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        
+        li {
+            list-style-type: none;
+            margin: 0;
+            font-size: 15pt;
+            float: left;
+        }
+        
+        li a {
+            text-decoration: none;
+            text-align: center;
+            padding: 20px;
+            margin-right: 0;
+            color: rgb(250, 248, 245);
+            font-weight: 400;
+            display: block;
+        }
+        
+        li a:hover {
+            color: rgb(12, 12, 12);
+            background-color: rgb(250, 248, 245);
+        }
+        
+        .active {
+            background-color: white;
+            color: black;
+        }
+        
+        .active:hover {
+            background-color: rgb(250, 248, 245);
+            color: rgb(22, 22, 22);
+        }
+        
+        .carousel {
+            background-color: rgb(238, 73, 62);
+            height: 500px;
+            max-width: 100%;
+            margin-top: 60px;
+        }
+        
+        h1 {
+            color: rgb(250, 248, 245);
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 80px;
+            font-size: 70px;
+        }
+        
+        h1+p {
+            text-align: center;
+            color: white;
+            font-size: 20pt;
+            margin-bottom: 50px;
+        }
+        
+        .start {
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 1px;
+            margin: auto;
+            padding: 20px 25px;
+            display: block;
+            text-align: center;
+            font-size: 15pt;
+            cursor: pointer;
+        }
+        
+        .start:hover {
+            color: black;
+            background-color: rgb(209, 207, 207);
+        }
+        
+        .fgrp,
+        .sgrp {
+            max-width: 100%;
+            padding: 50px 100px 45px 100px;
+            display: flex;
+        }
+        
+        .sgrp {
+            background-color: rgb(236, 232, 232);
+            flex-direction: row;
+        }
+        
+        .fgrp1,
+        .sgrp1 {
+            max-width: 60%;
+            padding: 20px 20px 0 20px;
+        }
+        
+        div>h2 {
+            font-size: 30pt;
+            font-weight: 400;
+        }
+        
+        h2+p {
+            font-size: 13pt;
+            font-weight: 600;
+            margin: 0 0 50px 0;
+        }
+        
+        .tgrp {
+            background-color: gray;
+            color: white;
+        }
+        
+        .tgrp p {
+            margin-top: 0;
+            padding: 80px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: 400;
+        }
+        
+        .fogrp {
+            text-align: center;
+            padding: 50px;
+        }
+        
+        .fogrp p {
+            color: rgb(134, 131, 131);
+            font-size: 15px;
+            margin-top: 50px;
+        }
+        
+        .fogrp p a {
+            color: rgb(134, 131, 131);
+        }
+        
+        .fontgrp {
+            margin: auto;
+        }
+        
+        .fogrp1 {
+            text-align: center;
+            display: inline-block;
+            /* max-width: 100%; */
+            /* margin: auto; */
+            font-size: 20px;
+            color: rgb(134, 131, 131);
+        }
+        
+        .font {
+            font-size: 200px;
+            color: rgb(238, 73, 62);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>The Developer and Netpreneur Fellowship</h1>
-    <!-- <p>A home for grooming aspiring techies to become better by <abbr title="Innovation Growth Hub">IGHUB</abbr></p>
-    <p>My name is Emmanuel ANENE</p> -->
-    <h2>My track is the Frontend track</h2>
-    <!-- <p>So far we've been inducted and prepared for the journey ahead</p>
-    <p>There are about many technologies used in Frontend Development</p> -->
-    <h3>Frontend technologies are mainly 3</h3>
-    <!-- <p>HTML</p>
-    <p>HTML 5</p>
-    <p>CSS</p>
-    <p>JS</p> -->
-    <h4>Networking of different individuals is making sense as we continue to bond</h4>
-    <h5>This Week is slated for HTML classes</h5>
-    <h6>It's gonna be intensive as we have been told overtime. Getting prepared for whatever lies ahead</h6>
-    <a href="http://www.google.com">Visit here!</a>
-    <img src="./images/love.jpg" alt="A heart of Love">
-    <table>
-        <tr>
-            <th>Continent</th>
-            <th>Country</th>
-            <th>Capital</th>
-        </tr>
-        <tr>
-            <td>Africa</td>
-            <td>Nigeria</td>
-            <td>Abuja</td>
-        </tr>
-        <tr>
-            <td>North America</td>
-            <td>United States of America</td>
-            <td>Washington DC</td>
-        </tr>
-        <tr>
-            <td>Asia</td>
-            <td>South Korea</td>
-            <td>Seoul</td>
-        </tr>
-        <tr>
-            <td>Europe</td>
-            <td>Germany</td>
-            <td>Berlin</td>
-        </tr>
-        <tr>
-            <td>South America</td>
-            <td>Brazil</td>
-            <td>Brasilia</td>
-        </tr>
-        <tr>
-            <td>Oceania</td>
-            <td>Australia</td>
-            <td>Canberra</td>
-        </tr>
-    </table>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+                <li><a href="">Link 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carousel">
+        <h1>Start Page</h1>
+        <p>Template by w3.css</p>
+        <button class="start">Get Started</button>
+        <!-- <input type="button" value="Get Started"> -->
+    </div>
+
+    <div class="fgrp">
+        <div class="fgrp1">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, nihil! Praesentium, eaque non! Fuga, amet, molestias et obcaecati debitis, necessitatibus voluptates a laudantium molestiae ullam odit commodi aut similique cupiditate.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, commodi sed! Et ad esse praesentium provident! Fugiat iure modi et impedit voluptatum assumenda expedita, pariatur obcaecati sed, omnis repudiandae ipsum possimus suscipit
+                odit, corrupti laboriosam facilis laudantium. Aspernatur, perferendis tempora reprehenderit similique labore ex iste sapiente ullam velit aliquam? Suscipit.</p>
+        </div>
+        <div class="fontgrp">
+            <i class="fa fa-anchor fa-5x font" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class="sgrp">
+        <div class="fontgrp">
+            <i class="fa fa-coffee font" aria-hidden="true"></i></i>
+        </div>
+        <div class="sgrp1">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius in accusamus quis impedit amet architecto sapiente quidem placeat et quibusdam nemo voluptatem ad voluptatibus eum minima tempore, quisquam commodi tempora!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis aliquid nihil veritatis? Saepe, dolorum in similique eligendi libero cumque! Animi vero saepe numquam facilis totam officia quod, officiis labore vel quibusdam commodi eaque fuga
+                quidem debitis modi aperiam eos! Fugiat laudantium eveniet reiciendis odio, ullam voluptatum neque voluptatem non modi!</p>
+        </div>
+    </div>
+    <div class="tgrp">
+        <p>Quote of the day: live life</p>
+    </div>
+    <div class="fogrp">
+        <div class="fogrp1"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+        <div class="fogrp1"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+        <div class="fogrp1"><i class="fa fa-snapchat-square" aria-hidden="true"></i></div>
+        <div class="fogrp1"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+        <div class="fogrp1"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+        <div class="fogrp1"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
+        <p>Powered by <a href="#">w3.css</a></p>
+    </div>
 </body>
 
 </html>
